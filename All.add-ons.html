@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Addons - BNcraft</title>
+    <style>
+        body {
+            background-color: #001F2F;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #002F3F;
+            border-bottom: 2px solid #00FFFF;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .search-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 300px;
+            padding: 10px;
+            background-color: #002F3F;
+            border: 2px solid #00FFFF;
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-bar::placeholder {
+            color: #00FFFF;
+        }
+
+        .search-bar:focus {
+            border-color: #00CED1;
+            background-color: #001F2F;
+        }
+
+        .mods-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .mod-item {
+            background-color: #002F3F;
+            border: 2px solid #00FFFF;
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .mod-item:hover {
+            transform: scale(1.05);
+        }
+
+        .mod-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .mod-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00FFFF;
+            margin-bottom: 10px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00FFFF;
+            color: #002F3F;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #00CED1;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #002F3F;
+            color: #00FFFF;
+            padding: 10px;
+            font-size: 12px;
+            border-top: 2px solid #00FFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/bitmap8999628725919376688.png" alt="Logo">
+        <div class="title">All Addons - BNcraft</div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" id="search-bar" placeholder="Search for addons..." onkeyup="filterMods()">
+    </div>
+
+    <div class="mods-container" id="mods-container">
+        <div class="mod-item" data-name="Villagers++ (Add-On)">
+            <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/e7c672fd-3a8e-42f9-83ad-2cf8bb83af88/Villagers_Thumbnail_0.jpg" alt="Villagers++">
+            <div class="mod-title">Villagers++ (Add-On)</div>
+            <a href="https://lootdest.org/s?1AHUxjHP" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 4.65 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Realistic Biomes (Add-On)">
+            <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/a22c83c4-484f-4fad-b37f-b4a651048df2/realisticbiomes_Thumbnail_0.jpg" alt="Realistic Biomes">
+            <div class="mod-title">Realistic Biomes (Add-On)</div>
+            <a href="https://loot-link.com/s?HXrawDnI" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 40.47 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Animations+ (Add-On)">
+            <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/4496a1cc-1b3e-4bd5-8b03-d29a4bb25029/A_Thumbnail_0.jpg" alt="Animations+">
+            <div class="mod-title">Animations+ (Add-On)</div>
+            <a href="https://loot-link.com/s?UUrpUAgN" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 2.23 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Amethyst Expansion (Add-On)">
+            <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/c712562c-ef36-44ff-9df2-76c11aea2c08/AE_Thumbnail_0.jpg" alt="Amethyst Expansion">
+            <div class="mod-title">Amethyst Expansion (Add-On)</div>
+            <a href="https://loot-link.com/s?PnTrFmsG" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 1.4 MB</div>
+        </div>
+        
+<div class="mod-item" data-name="Skibidi Toilet Raids (Add-On)">
+    <img src="https://d1wzdj81h1hubn.cloudfront.net/resources/42816341d366cef4.jpeg" alt="Skibidi Toilet Raids">
+    <div class="mod-title">Skibidi Toilet Raids (Add-On)</div>
+    <a href="https://lootdest.org/s?dsakyDLk" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 21.01 MB</div>
+</div>
+
+<div class="mod-item" data-name="Smartphones (Add-On)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/bf15d767-94e5-4bac-8784-cb3b3079888c/SmartphonesAddOn_Thumbnail_0.jpg" alt="Smartphones">
+    <div class="mod-title">Smartphones (Add-On)</div>
+    <a href="https://loot-link.com/s?S4BSgKgq" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 48.44 MB</div>
+</div>
+
+<div class="mod-item" data-name="Towers and Dungeons (Add-On)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/efe6380d-f13d-48b7-b77c-a14667c4a55c/TowersAndDungeons_Thumbnail_0.jpg" alt="Towers and Dungeons">
+    <div class="mod-title">Towers and Dungeons (Add-On)</div>
+    <a href="https://lootdest.org/s?i0Ea7Z3q" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 40.06 MB</div>
+</div>
+
+<div class="mod-item" data-name="HORROR SURVIVAL (Add-On)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/302089be-7eb9-4294-8a80-a8a6778adb57/Survival_But_Horror_Thumbnail_0.jpg" alt="HORROR SURVIVAL (Add-On)">
+    <div class="mod-title">HORROR SURVIVAL (Add-On)</div>
+    <a href="https://loot-link.com/s?qdCVrCDv" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 29.76 MB</div>
+</div>
+
+<div class="mod-item" data-name="Dragons (Add-On)">
+    <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/3b527cc4ec09809b_orig.jpeg" alt="Dragons">
+    <div class="mod-title">Dragons (Add-On)</div>
+    <a href="https://lootdest.org/s?uBUuIbts" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 11.75 MB</div>
+</div>
+
+<div class="mod-item" data-name="THE EXPLORER'S WAYSTONES (Add-On)">
+    <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/explorerswaystones-thumbnail-0-copy-800x450_orig.jpg" alt="THE EXPLORER'S WAYSTONES">
+    <div class="mod-title">THE EXPLORER'S WAYSTONES (Add-On)</div>
+    <a href="https://loot-link.com/s?WmxkoEuF" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 1.84 MB</div>
+</div>
+
+<div class="mod-item" data-name="ULTRA Mob Totems (Add-On)">
+    <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20241231-wa0017_orig.jpg" alt="ULTRA Mob Totems">
+    <div class="mod-title">ULTRA Mob Totems (Add-On)</div>
+    <a href="https://lootdest.org/s?Q5IJ2Ujx" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 3.84 MB</div>
+</div>
+
+<div class="mod-item" data-name="Basic Machinery (Add-On)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/7b78f8a6-67f6-4a85-aa4b-d6d24c775f4e/Basic_Machinery_Thumbnail_0.jpg" alt="Basic Machinery">
+    <div class="mod-title">Basic Machinery (Add-On)</div>
+    <a href="https://lootdest.org/s?vE2KcLxu" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 5.9 MB</div>
+</div>
+
+<div class="mod-item" data-name="DRAGONS (Add-On)">
+    <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20250103-wa0029_orig.jpg" alt="DRAGONS">
+    <div class="mod-title">DRAGONS (Add-On)</div>
+    <a href="https://loot-link.com/s?PbHAVp71" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 24.17 MB</div>
+</div>
+
+<div class="mod-item" data-name="PARASITE OUTBREAK (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/cba26129-f0f3-46c5-9088-6cdacb1d03e1/PARASITE_SURVIVAL__Thumbnail_0.jpg" alt="PARASITE OUTBREAK">
+    <div class="mod-title">PARASITE OUTBREAK (Add-On)</div>
+    <a href="https://loot-link.com/s?kGJjz4ve" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 16.17 MB</div>
+</div>
+
+<div class="mod-item" data-name="One Piece (Add-On)">
+    <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20250110-wa0010_orig.jpg" alt="One Piece">
+    <div class="mod-title">One Piece (Add-On)</div>
+    <a href="https://lootdest.org/s?MsEXiEtQ" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 590.02 KB</div>
+</div>
+
+<div class="mod-item" data-name="Mage Mania (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/4ab5c8fb-158e-471a-a541-901c21fecd03/WitchesNWizards_Thumbnail_0.jpg" alt="Mage Mania">
+    <div class="mod-title">Mage Mania (Add-On)</div>
+    <a href="https://loot-link.com/s?VGhgrnM2" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 13.9 MB</div>
+</div>
+
+<div class="mod-item" data-name="Essentials (Add-On)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/6ae9dc2c-4e89-424a-8a59-d9acaca7c275/essentials_Thumbnail_0.jpg" alt="Essentials">
+    <div class="mod-title">Essentials (Add-On)</div>
+    <a href="https://loot-link.com/s?z9c4zy1D" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 1.95 MB</div>
+</div>
+
+<div class="mod-item" data-name="blue archive 2V (Add-On)">
+    <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/picsart-25-01-11-05-56-26-044-copy-800x450_orig.jpg" alt="blue archive 2V">
+    <div class="mod-title">blue archive 2V (Add-On)</div>
+    <a href="https://loot-link.com/s?1jjJlvAL" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 17.62 MB</div>
+</div>
+
+<div class="mod-item" data-name="RPG Skills (Add-Ons)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/ef82677e-507f-4dea-9489-dc70258f7a5f/RPG_Skills_Thumbnail_0.jpg" alt="RPG Skills">
+    <div class="mod-title">RPG Skills (Add-Ons)</div>
+    <a href="https://lootdest.org/s?xtkTvTmy" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 500.9 KB</div>
+</div>
+
+<div class="mod-item" data-name="Tinkers' Construct (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/a1d2aa26-42f6-405b-ad53-76b2b872c5df/Tinkers_Construct-Thumbnail_0.jpg" alt="Tinkers' Construct">
+    <div class="mod-title">Tinkers' Construct (Add-On)</div>
+    <a href="https://loot-link.com/s?a37uSpo9" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 40.23 MB</div>
+</div>
+
+<div class="mod-item" data-name="PLAYER TRAILS (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/f88f3dc4-e90c-4769-88d8-c6689d839a9e/PT_Thumbnail_0.jpg" alt="PLAYER TRAILS">
+    <div class="mod-title">PLAYER TRAILS (Add-On)</div>
+    <a href="https://loot-link.com/s?a7RcVxb2" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 1.36 MB</div>
+</div>
+
+<div class="mod-item" data-name="Feed the Bees (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/a36a7a24-00af-417b-bf0a-29867258298b/feed_the_bees-Thumbnail_0.jpg" alt="Feed the Bees">
+    <div class="mod-title">Feed the Bees (Add-On)</div>
+    <a href="https://lootdest.org/s?Ufo2YgGl" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 27.31 MB</div>
+</div>
+
+<div class="mod-item" data-name="Ghast Expansion (Add-On)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/e4089f3a-7dad-489e-83d5-1dce1a6d12e2/GE_Thumbnail_0.jpg" alt="Ghast Expansion">
+    <div class="mod-title">Ghast Expansion (Add-On)</div>
+    <a href="https://loot-link.com/s?kYnEtIqV" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 614.84 KB</div>
+</div>
+
+<div class="mod-item" data-name="Vehicles Pro (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/344ff0bc-11d6-45d0-abe9-d905bb7a85cd/vehiclespro_Thumbnail_0.jpg" alt="Vehicles Pro">
+    <div class="mod-title">Vehicles Pro (Add-On)</div>
+    <a href="https://loot-link.com/s?fSL2kweq" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 14.36 MB</div>
+</div>
+
+<div class="mod-item" data-name="Storage++ (Add-On)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/2107dfb8-d47c-442d-93c1-001d6ccb7f8a/Storage_Thumbnail_0.jpg" alt="Storage++">
+    <div class="mod-title">Storage++ (Add-On)</div>
+    <a href="https://lootdest.org/s?XHaflBQH" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 754.89 KB</div>
+</div>
+
+<div class="mod-item" data-name="RPG Skills (Add-Ons)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/ef82677e-507f-4dea-9489-dc70258f7a5f/RPG_Skills_Thumbnail_0.jpg" alt="RPG Skills">
+    <div class="mod-title">RPG Skills (Add-Ons)</div>
+    <a href="https://lootdest.org/s?xtkTvTmy" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 500.9 KB</div>
+</div>
+
+<div class="mod-item" data-name="Essentials (Add-On)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/6ae9dc2c-4e89-424a-8a59-d9acaca7c275/essentials_Thumbnail_0.jpg" alt="Essentials">
+    <div class="mod-title">Essentials (Add-On)</div>
+    <a href="https://loot-link.com/s?z9c4zy1D" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 1.95 MB</div>
+</div>
+
+<div class="mod-item" data-name="blue archive 2V (Add-On)">
+    <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/picsart-25-01-11-05-56-26-044-copy-800x450_orig.jpg" alt="blue archive 2V">
+    <div class="mod-title">blue archive 2V (Add-On)</div>
+    <a href="https://loot-link.com/s?1jjJlvAL" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 17.62 MB</div>
+</div>
+
+<div class="mod-item" data-name="RPG Skills (Add-Ons)">
+    <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/ef82677e-507f-4dea-9489-dc70258f7a5f/RPG_Skills_Thumbnail_0.jpg" alt="RPG Skills">
+    <div class="mod-title">RPG Skills (Add-Ons)</div>
+    <a href="https://lootdest.org/s?xtkTvTmy" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 500.9 KB</div>
+</div>
+        
+<div class="mod-item" data-name="ANIME JUTSU (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/2836457b-ce73-41b0-a21b-c7a7c0dce3b1/ANIMEJUTSU_Thumbnail_0.jpg" alt="ANIME JUTSU">
+    <div class="mod-title">ANIME JUTSU (Add-On)</div>
+    <a href="https://lootdest.org/s?dDtQ8MzI" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 18.72 MB</div>
+</div>
+
+<div class="mod-item" data-name="BLASTERS (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/696b5658-cc90-4169-9871-fea16126910b/Blasters_Thumbnail_0.jpg" alt="BLASTERS">
+    <div class="mod-title">BLASTERS (Add-On)</div>
+    <a href="https://loot-link.com/s?f9TgA6US" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 82.32 MB</div>
+</div>
+
+<div class="mod-item" data-name="BOSSES+ (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/8029ca57-bea8-4eb5-9362-3ea1a07eb59a/BPL_Thumbnail_0.jpg" alt="BOSSES+">
+    <div class="mod-title">BOSSES+ (Add-On)</div>
+    <a href="https://lootdest.org/s?NVsmppYI" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 9.48 MB</div>
+</div>
+
+<div class="mod-item" data-name="CAVE DWELLER (Add-On)">
+    <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/ea4548c8-6aa1-469f-aac3-918d0f82ac60/CaveDweller_Thumbnail_0.jpg" alt="CAVE DWELLER">
+    <div class="mod-title">CAVE DWELLER (Add-On)</div>
+    <a href="https://lootdest.org/s?z0fqRAhk" class="download-button" target="_blank">Download</a>
+    <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 13.48 MB</div>
+</div>
+
+        <div class="mod-item" data-name="Radium's Armament (Add-On)">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/picsart-25-01-01-14-41-26-492-copy-1280x750_orig.jpg" alt="Radium's Armament">
+            <div class="mod-title">Radium's Armament (Add-On)</div>
+            <a href="https://loot-link.com/s?qFXJR28M" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 69.24 MB</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 BNcraft. All rights reserved.
+    </footer>
+
+    <script>
+        function filterMods() {
+            const searchInput = document.getElementById('search-bar').value.toLowerCase();
+            const modsContainer = document.getElementById('mods-container');
+            const mods = modsContainer.getElementsByClassName('mod-item');
+
+            for (let i = 0; i < mods.length; i++) {
+                const modName = mods[i].getAttribute('data-name').toLowerCase();
+                if (modName.includes(searchInput)) {
+                    mods[i].style.display = '';
+                } else {
+                    mods[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
