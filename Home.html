@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: #001F2F;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #002F3F;
+            padding: 20px;
+            border-bottom: 2px solid #00FFFF;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #002F3F;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .search-bar {
+            width: 400px;
+            padding: 10px;
+            background-color: #001F2F;
+            border: 2px solid #00FFFF;
+            border-radius: 5px;
+            color: #FFFFFF;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-bar::placeholder {
+            color: #00FFFF;
+        }
+
+        .all-mods-button {
+            display: inline-block;
+            background-color: #00FFFF;
+            color: #002F3F;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .all-mods-button:hover {
+            background-color: #00CED1;
+            transform: scale(1.05);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .grid-item {
+            background-color: #00FFFF;
+            color: #002F3F;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.1);
+            background-color: #00CED1;
+        }
+
+        .discord-banner {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: #001F2F;
+            border: 2px solid #00FFFF;
+            border-radius: 10px;
+        }
+
+        .discord-banner img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .discord-banner a {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00FFFF;
+            text-decoration: none;
+        }
+
+        .discord-banner a span {
+            color: yellow;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #002F3F;
+            color: #00FFFF;
+            font-size: 14px;
+            border-top: 2px solid #00FFFF;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-links a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/bitmap8999628725919376688.png" alt="Logo">
+        <div class="title">Welcome to BNcraft</div>
+    </header>
+
+    <div class="content-wrapper">
+        <!-- Arama Çubuğu -->
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+
+        <!-- All Mods Butonu -->
+        <div style="text-align: center; margin-bottom: 20px;">
+            <a href="https://bncraft.github.io/All.mods.html" class="all-mods-button">All Mods</a>
+        </div>
+
+        <!-- Kategori Listesi -->
+        <div class="grid-container">
+            <a href="https://bncraft.github.io/All.add-ons.html" class="grid-item">Add-ons</a>
+            <a href="https://bncraft.github.io/All.Templates.html" class="grid-item">Templates</a>
+            <a href="https://bncraft.github.io/All.Texture.packs.html" class="grid-item">Texture Packs</a>
+            <a href="https://bncraft.github.io/All.Skin-Packa.html" class="grid-item">Skin Packs</a>
+        </div>
+
+        <!-- Discord Banner -->
+        <div class="discord-banner">
+            <img src="https://cdn.icon-icons.com/icons2/3169/PNG/512/discord_logo_icon_193568.png" alt="Discord Logo">
+            <a href="https://discord.gg/feU8DERptY" target="_blank">
+                Join our Discord for <span>secret</span> mods!
+            </a>
+        </div>
+
+        <!-- Sosyal Medya Bağlantıları -->
+        <div class="social-links">
+            <a href="https://discord.gg/feU8DERptY" target="_blank">
+                <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/1735988200073_orig.png" alt="Discord Logo">
+            </a>
+            <a href="https://youtube.com/@bncraft.1?si=Y2G0-CESwI4BSBz1" target="_blank">
+                <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/1735988111224_orig.png" alt="YouTube Logo">
+            </a>
+            <a href="https://www.tiktok.com/@bn.craft4?_t=ZS-8srA8CzQApE&_r=1" target="_blank">
+                <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/1735988057347_orig.png" alt="TikTok Logo">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 BNcraft. All rights reserved.
+    </footer>
+</body>
+</html>
