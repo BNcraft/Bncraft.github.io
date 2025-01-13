@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Texture-Packs - BNcraft</title>
+    <style>
+        body {
+            background-color: #001F2F;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #002F3F;
+            border-bottom: 2px solid #00FFFF;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .search-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 300px;
+            padding: 10px;
+            background-color: #002F3F;
+            border: 2px solid #00FFFF;
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-bar::placeholder {
+            color: #00FFFF;
+        }
+
+        .search-bar:focus {
+            border-color: #00CED1;
+            background-color: #001F2F;
+        }
+
+        .mods-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .mod-item {
+            background-color: #002F3F;
+            border: 2px solid #00FFFF;
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .mod-item:hover {
+            transform: scale(1.05);
+        }
+
+        .mod-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .mod-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00FFFF;
+            margin-bottom: 10px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00FFFF;
+            color: #002F3F;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #00CED1;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #002F3F;
+            color: #00FFFF;
+            padding: 10px;
+            font-size: 12px;
+            border-top: 2px solid #00FFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/bitmap8999628725919376688.png" alt="Logo">
+        <div class="title">All Texture-Packs - BNcraft</div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" id="search-bar" placeholder="Search for texture-packs..." onkeyup="filterMods()">
+    </div>
+
+    <div class="mods-container" id="mods-container">
+        <div class="mod-item" data-name="Actions & Stuff (Texture Pack)">
+            <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/ddae3b71-5292-4f86-8b09-f6a119d78ef5/actionsandstuff_Thumbnail_0.jpg" alt="Actions & Stuff">
+            <div class="mod-title">Actions & Stuff (Texture Pack)</div>
+            <a href="https://lootdest.org/s?nc4bVpwI" class="download-button" target="_blank">Download</a>
+        </div>
+
+        <div class="mod-item" data-name="Hafen (Texture Pack)">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20241229-wa0158_orig.jpg" alt="Hafen">
+            <div class="mod-title">Hafen (Texture Pack)</div>
+            <a href="https://lootdest.org/s?Va81R97o" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 6.61 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Pumpkin Halloween (Texture Pack)">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20241228-wa0173_orig.jpg" alt="Pumpkin Halloween">
+            <div class="mod-title">Pumpkin Halloween (Texture Pack)</div>
+            <a href="https://lootdest.org/s?1xuoDioX" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 3.91 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Noble PVP 16X (Texture Pack)">
+            <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/6332d00d-7630-43fb-87f8-f7676d121038/NPVPTP_thumbnail_0.jpg" alt="Noble PVP 16X">
+            <div class="mod-title">Noble PVP 16X (Texture Pack)</div>
+            <a href="https://loot-link.com/s?YRrO18zu" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 52.86 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Hacker Texture Pack (Texture Pack)">
+            <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/4426d0ca-068d-493f-83e9-343ec86b8b7b/HckrTxtrPck_thumbnail_0.jpg" alt="Hacker Texture Pack">
+            <div class="mod-title">Hacker Texture Pack (Texture Pack)</div>
+            <a href="https://loot-link.com/s?qfL0b4kF" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 33.89 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Dream Kawaii (Texture Pack)">
+            <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/7d99ce20-2ebc-4082-b5aa-527fd0b74db2/Cute_32x_Thumbnail_0.jpg" alt="Dream Kawaii">
+            <div class="mod-title">Dream Kawaii (Texture Pack)</div>
+            <a href="https://loot-link.com/s?rlagzLvB" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 7.54 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Solar sword (Texture Pack)">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20250109-wa0071_orig.jpg" alt="Solar sword">
+            <div class="mod-title">Solar sword (Texture Pack)</div>
+            <a href="https://loot-link.com/s?EJAPyTIW" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 136.9 KB</div>
+        </div>
+
+        <div class="mod-item" data-name="Cute Vibes Texture Pack (Texture Pack)">
+            <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/5be1147b-99af-4bd0-8106-e016c4a8d7e3/CuteVibes_thumbnail_0.jpg" alt="Cute Vibes Texture Pack">
+            <div class="mod-title">Cute Vibes Texture Pack (Texture Pack)</div>
+            <a href="https://loot-link.com/s?THotYkYC" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 82.95 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Seasons Realism (Texture Pack)">
+            <img src="https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/0f8b41a1-767d-4b85-85e3-c4f2b3dca43d/FourSeasons_thumbnail_0.jpg" alt="Seasons Realism">
+            <div class="mod-title">Seasons Realism (Texture Pack)</div>
+            <a href="https://loot-link.com/s?BJL29cPI" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 24.63 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="PVP PRO (Texture Pack)">
+            <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/edf35ccd-30cb-4c14-8862-14622fbf21f5/pvp_Thumbnail_0.jpg" alt="PVP PRO">
+            <div class="mod-title">PVP PRO (Texture Pack)</div>
+            <a href="https://lootdest.org/s?6pF9I736" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 24.26 MB</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 BNcraft. All rights reserved.
+    </footer>
+
+    <script>
+        function filterMods() {
+            const searchInput = document.getElementById('search-bar').value.toLowerCase();
+            const modsContainer = document.getElementById('mods-container');
+            const mods = modsContainer.getElementsByClassName('mod-item');
+
+            for (let i = 0; i < mods.length; i++) {
+                const modName = mods[i].getAttribute('data-name').toLowerCase();
+                if (modName.includes(searchInput)) {
+                    mods[i].style.display = '';
+                } else {
+                    mods[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
