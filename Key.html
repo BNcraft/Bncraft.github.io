@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNcraft Unlock Page</title>
+    <style>
+        body {
+            background-color: #001F2F;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #002F3F;
+            padding: 20px;
+            border-bottom: 2px solid #00FFFF;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00FFFF;
+            text-shadow: 0 0 15px #00FFFF;
+        }
+
+        .unlock-button {
+            display: block;
+            margin: 40px auto;
+            padding: 12px 24px; /* Küçültülmüş buton boyutu */
+            background-color: #00FFFF;
+            color: #001F2F;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px; /* Küçültülmüş yazı boyutu */
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 0 10px #00FFFF;
+            cursor: pointer;
+        }
+
+        .unlock-button:hover {
+            background-color: #00CED1;
+            transform: scale(1.05); /* Reduced scaling */
+            box-shadow: 0 0 15px #00FFFF; /* Reduced glow */
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            background-color: #002F3F;
+            border: 2px solid #00FFFF;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 0 20px #00FFFF;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .popup.show {
+            display: block;
+            transform: translate(-50%, -50%) scale(0.8); /* Reduced scaling */
+            opacity: 1;
+        }
+
+        .popup input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #00FFFF;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            background-color: #001F2F;
+            color: #00FFFF;
+            box-sizing: border-box;
+        }
+
+        .popup button {
+            background-color: #00BFFF; /* Mavi tonunda */
+            color: #001F2F;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Animasyonu sadece renk değişiminde yap */
+            box-shadow: 0 0 10px #00FFFF;
+            margin: 10px;
+        }
+
+        .popup button:hover {
+            background-color: #1E90FF; /* Daha açık mavi */
+        }
+
+        .popup button:active {
+            transform: none; /* Tıklama sırasında hareketi engelle */
+            box-shadow: 0 0 5px #00FFFF; /* Hafif bir gölge */
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-links a img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s, filter 0.3s;
+            filter: brightness(1.2);
+        }
+
+        .social-links a img:hover {
+            transform: scale(1.05); /* Reduced scaling */
+            filter: brightness(1.5); /* Reduced brightness */
+        }
+    </style>
+</head>
+<body>
+    <!-- Sayfa Başlık -->
+    <header>
+        <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/bitmap8999628725919376688.png" alt="Logo">
+        <div class="title">Welcome to BNcraft</div>
+    </header>
+
+    <!-- Sosyal Bağlantılar -->
+    <div class="social-links">
+        <a href="https://youtube.com/@bncraft.1?si=SijWQnMpgoPkZUww">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/1735988111224_orig.png" alt="YouTube">
+        </a>
+        <a href="https://discord.gg/feU8DERptY">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/1735988200073_orig.png" alt="Discord">
+        </a>
+        <a href="https://www.tiktok.com/@bn.craft4?_t=ZS-8srA8CzQApE&_r=1">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/1735988057347_orig.png" alt="TikTok">
+        </a>
+    </div>
+
+    <!-- Unlock Butonu -->
+    <a class="unlock-button" onclick="showPopup()">UNLOCK</a>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <p>What is the name of the site?</p>
+        <input type="text" id="inputKey" placeholder="Enter the site name">
+        <button class="send-button" onclick="checkKey()">Send</button>
+        <button class="close-button" onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.getElementById('popup');
+            popup.classList.add('show');
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.classList.remove('show');
+        }
+
+        function checkKey() {
+            const key = document.getElementById('inputKey').value.toLowerCase();
+            if (key === 'bncraft') {
+                window.location.href = 'https://bnmods9.github.io/';
+            } else {
+                alert('Incorrect key!');
+            }
+        }
+    </script>
+</body>
+</html>
