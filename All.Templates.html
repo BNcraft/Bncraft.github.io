@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Templates - BNcraft</title>
+    <style>
+        body {
+            background-color: #001F2F;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #002F3F;
+            border-bottom: 2px solid #00FFFF;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .search-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 300px;
+            padding: 10px;
+            background-color: #002F3F;
+            border: 2px solid #00FFFF;
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-bar::placeholder {
+            color: #00FFFF;
+        }
+
+        .search-bar:focus {
+            border-color: #00CED1;
+            background-color: #001F2F;
+        }
+
+        .mods-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .mod-item {
+            background-color: #002F3F;
+            border: 2px solid #00FFFF;
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .mod-item:hover {
+            transform: scale(1.05);
+        }
+
+        .mod-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .mod-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00FFFF;
+            margin-bottom: 10px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00FFFF;
+            color: #002F3F;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #00CED1;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #002F3F;
+            color: #00FFFF;
+            padding: 10px;
+            font-size: 12px;
+            border-top: 2px solid #00FFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/bitmap8999628725919376688.png" alt="Logo">
+        <div class="title">All Templates - BNcraft</div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" id="search-bar" placeholder="Search for templates..." onkeyup="filterMods()">
+    </div>
+
+    <div class="mods-container" id="mods-container">
+        <div class="mod-item" data-name="SUPERHERO MODE (Template)">
+            <img src="https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/58ed2dd3-ad29-47e1-914b-ae6de7fe9ff5/SUPERHEROMODE_Thumbnail_0.jpg" alt="SUPERHERO MODE (Template)">
+            <div class="mod-title">SUPERHERO MODE (Template)</div>
+            <a href="https://loot-link.com/s?pOelbSUQ" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 79.63 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Anime Weapons (Template)">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/animeweapons-thumbnail-0_orig.jpg" alt="Anime Weapons">
+            <div class="mod-title">Anime Weapons (Template)</div>
+            <a href="https://lootdest.org/s?rVYZJ363" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 48.15 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="MarsCraft (Template)">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20250104-wa0093-1_orig.jpg" alt="MarsCraft">
+            <div class="mod-title">MarsCraft (Template)</div>
+            <a href="https://lootdest.org/s?HrL4ESpA" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 19.86 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="ZOMBIES (Template)">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20250104-wa0101-copy-800x450_orig.jpg" alt="ZOMBIES">
+            <div class="mod-title">ZOMBIES (Template)</div>
+            <a href="https://loot-link.com/s?jQfipBsx" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 34.02 MB</div>
+        </div>
+
+        <div class="mod-item" data-name="Megalodon (Template)">
+            <img src="https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/img-20250106-wa0029_orig.jpg" alt="Megalodon (Template)">
+            <div class="mod-title">Megalodon (Template)</div>
+            <a href="https://lootdest.org/s?i8RSJAC0" class="download-button" target="_blank">Download</a>
+            <div class="mod-size" style="color: #a3c9e2; font-weight: bold; font-size: 1.1em; margin-top: 10px;">Size: 13.9 MB</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 BNcraft. All rights reserved.
+    </footer>
+
+    <script>
+        function filterMods() {
+            const searchInput = document.getElementById('search-bar').value.toLowerCase();
+            const modsContainer = document.getElementById('mods-container');
+            const mods = modsContainer.getElementsByClassName('mod-item');
+
+            for (let i = 0; i < mods.length; i++) {
+                const modName = mods[i].getAttribute('data-name').toLowerCase();
+                if (modName.includes(searchInput)) {
+                    mods[i].style.display = '';
+                } else {
+                    mods[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
