@@ -31,7 +31,7 @@ const MODS = [
         size: '2.23 MB'
     },
     {
-    
+
         name: 'ANIME JUTSU',
         type: 'Add-On',
         imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/2836457b-ce73-41b0-a21b-c7a7c0dce3b1/ANIMEJUTSU_Thumbnail_0.jpg',
@@ -508,6 +508,237 @@ const MODS = [
         "size": "12.74 MB"
     },
     {
+        name: 'Pink Dream',
+        type: 'Skin Pack',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/660b2df0-3c3a-450d-bfc9-a3153befed1d/PinkMood_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?3bpoSBc2',
+        size: '34.67 KB'
+    },
+    {
+        name: 'AsianCraft Building',
+        type: 'Template',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/c752512a-dbfd-4f74-aa9f-c5f66c85987a/AsianCraftBuildingAddOn_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?q83YlsoB',
+        size: '2.06 MB'
+    },
+    {
+        name: 'Construction',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/23a07577-577b-4054-9957-b48f9d7ba64d/Construction_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?x9PaUYnM',
+        size: '8.19 MB'
+    },
+    {
+        name: 'Skyblock Factory',
+        type: 'Template',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/cea8cd98-7ea3-4641-a50d-273895190ca6/SkyblockFactory_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?LZnf62aq',
+        size: '1.35 MB'
+    },
+    {
+        name: 'Security Vaults',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/f2bb57c7-1695-4320-8be0-f388d2dfa999/SecurityVaultsAdd-On_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?EyeieVbU',
+        size: '9.41 MB'
+    },
+    {
+        name: 'Security',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/ef6da6fa-6731-47df-93f9-fb8d5f19c4f7/Security_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?CcWF87J9',
+        size: '1.92 MB'
+    },
+    {
+        name: 'FARMING',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/f060d9a4-1e3e-4060-bd4c-c2249067cd75/Farming_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?lH4NH2dP',
+        size: '6.44 MB'
+    },
+    {
+        name: 'Health Bars',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/dda88bfe-a890-466b-8322-99d6e86306ed/healthbars_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?dqRnCaj8',
+        size: '136.27 KB'
+    },
+    {
+        name: 'Trains',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/64b6acb4-a4a6-417b-9db9-86c431dbd06b/TA_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?ynHGVA6P',
+        size: '8.78 MB'
+    },
+    {
+        name: 'Anime Frogs',
+        type: 'Skin Pack',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/0da20753-55fd-4a60-b8a1-84f10f9f89d4/AnimeFrogs_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?eeubfq70',
+        size: '43.13 KB'
+    },
+    {
+        name: 'Pirate Era',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/5298ab1f-1a04-4a9f-968b-ff900dced944/pirateera_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?qSxSaupP',
+        size: '9.04 MB'
+    },
+    {
+        name: 'Biomes + Realism',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/9be97d1f-0d1c-4fbf-ae5a-5d576c223fa9/RealismeBiome_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?ikR02TYr',
+        size: '51.65 MB'
+    },
+    {
+        name: 'Actions & Stuff V1.1',
+        type: 'Texture Pack',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/ddae3b71-5292-4f86-8b09-f6a119d78ef5/actionsandstuff_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?E7WU8ntO',
+        size: '41.89 MB'
+    },
+    {
+        name: 'Armor',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/1328de2a-b6cd-466f-b788-f874e0bbf947/A_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?RlLwj24M',
+        size: '1.08 MB'
+    },
+    {
+        name: 'Avatar Legends',
+        type: 'Template',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/61c0b395-081c-4592-82ac-0a6b26689fbb/Avatar_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?CSDWzvXS',
+        size: '75.67 MB'
+    },
+    {
+        name: 'Boba Tea Town',
+        type: 'Template',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/356d7d0b-c1f0-41c3-a979-c6bad914443d/BobaTeaTown_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?4Iut2kND',
+        size: '121.37 MB'
+    },
+    {
+        name: 'Craft Redstone',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/ba4b1822-3554-4ce9-ab0e-fb4e75c3e74c/CR_thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?f63ManjE',
+        size: '20.25 MB'
+    },
+    {
+        name: 'Realism Effects',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/89554210-10c1-41fc-bab6-af9677acd3a5/Realism_Effects_Add-On_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?Y1I93JJN',
+        size: '6.46 MB'
+    },
+    {
+        name: 'REALISM Fields + Forests',
+        type: 'Template',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/53ec9716-5c9c-4bc0-aa78-588019b44028/Realism_Fields-Forests_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?S1hlN9XH',
+        size: '143.46 MB'
+    },
+    {
+        name: 'Immersion: Chicago',
+        type: 'Template',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-title-b63a0803d3653643-20ca2/9840a213-d825-4b4a-8aa3-eee3cf64831f/Chicago_thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?PgRAIzuG',
+        size: '14.79 MB'
+    },
+    {
+        name: 'Sonic the Hedgehog',
+        type: 'Template',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/998c7617-a685-408f-8ab1-d0e7db63c042/Sonic_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?pFrgmziJ',
+        size: '99.57 MB'
+    },
+    {
+        name: 'FOOD EXPANSION',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/0b40b14f-72f4-4bc6-ab83-983e938cd8a8/FE_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?B5wJyJAJ',
+        size: '1.4 MB'
+    },
+    {
+        name: 'carry more',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/290be5de-f9ff-411f-94d1-689a2968d483/CarryMoreAdd-On_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?xmyf6g7c',
+        size: '709.32 KB'
+    },
+    {
+        name: 'Pink Madness',
+        type: 'Skin Pack',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/8ecaf2d8-0f80-48d0-ad74-337d94d68547/PinkMadness_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?F8XVTdGO',
+        size: '23.25 KB'
+    },
+    {
+        name: '100 Days Zombie Apocalypse!',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/206681a4-da13-4f0d-a3bb-2e5a48fbff5d/100DaysZombieApocalypse_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?rTbgLPlY',
+        size: '64.97 MB'
+    },
+    {
+        name: 'Golden Shadows',
+        type: 'Skin Pack',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/bb5271a2-7e68-4976-9483-aa5e389bf2fe/GoldenShadows_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?6OrRKO1C',
+        size: '39.18 KB'
+    },
+    {
+        name: 'Black & White',
+        type: 'Skin Pack',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/83bd69f7-2c73-47af-80a6-09f034f103b9/blackandwhite_thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?Zi6o6H1t',
+        size: '34.53 KB'
+    },
+    {
+        name: 'Allay Fashion',
+        type: 'Skin Pack',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/7a88aedb-2926-4ac2-89b9-7f513b372434/AllayFashion_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?rczWpfDt',
+        size: '29.74 KB'
+    },
+    {
+        name: 'Shadow Skins HD',
+        type: 'Skin Pack',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/4cc3ca79-f394-41b5-867c-39d5af156c63/ShadowSkinsHD_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?rrHkTALW',
+        size: '46.98 KB'
+    },
+    {
+        name: 'Furniture+',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/4b716db6-8a00-4ced-8289-273af72497c2/Furniture_Thumbnail.jpg',
+        downloadUrl: 'https://lootdest.org/s?DDM6Oadq',
+        size: '43.02 MB'
+    },
+    {
+        name: 'Sonic',
+        type: 'Texture Pack',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/3902169f-08dc-4254-9e06-baa9cf6a29dc/SonicTextures_Thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?b7E57ZD9',
+        size: '16.2 MB'
+    },
+    {
+        name: 'Sonic',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/7ffcff1c-8c84-4d8e-9af2-625ca0021d5c/order_thumbnail_0.jpg',
+        downloadUrl: 'https://lootdest.org/s?FyH0OAro',
+        size: '4.1 MB'
+    },
+    {
+        name: 'Spark Pets Premium',
+        type: 'Add-On',
+        imageUrl: 'https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/e03a1f34-de8b-427e-b2a9-3e5d3471f5c6/Spark_Pets_Premium_Thumbnail_0.jpg',
+        downloadUrl: 'https://loot-link.com/s?NUnJwmhw',
+        size: '14.3 MB'
+    },
+    {
         name: "Radium's Armament",
         type: 'Add-On',
         imageUrl: 'https://bncraft9.weebly.com/uploads/1/5/1/8/151839741/picsart-25-01-01-14-41-26-492-copy-1280x750_orig.jpg',
@@ -562,4 +793,4 @@ client.on('messageCreate', async message => {
     }
 });
 
-client.login('MTMyODkyMDUwMDc3NjMzNzQ4MQ.GfHBpY.L3APr65PiGXecI9ko01IQjdK8EyjD0udpiMEyU'); // Bot tokeninizi buraya ekleyin
+client.login('MTMyODkyMDUwMDc3NjMzNzQ4MQ.G9mP22.dw8yyMWhFTfFoSI1zKWW2AsR-3HY23UIE68Bh8'); // Bot tokeninizi buraya ekleyin
